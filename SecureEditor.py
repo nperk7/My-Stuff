@@ -44,7 +44,7 @@ if platform.system().find('Darwin') != -1:
             try:
                 data = self.t.get(1.0, END)
                 name = self.title.get()
-                docName = os.path.expanduser("/Volumes/SURFACEPRO4/%s.txt" % name)
+                docName = os.path.expanduser("/*filepath*/%s.txt" % name)
                 fle = open(docName, "w")
                 fle.write(en.encr(data))
                 fle.close()
@@ -91,7 +91,7 @@ if platform.system().find('Darwin') != -1:
         def updat(self):
             self.master.update()
             try:
-                if self.passWord.get() == "Nperkins30":
+                if self.passWord.get() == "*password*":
                     self.create()
             except:
                 pass
