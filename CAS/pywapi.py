@@ -1,4 +1,3 @@
-__author__ = 'naperkins'
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 ### BEGIN LICENSE
